@@ -1,0 +1,51 @@
+📰 Fake News Detection Using Machine Learning
+This project implements a fake news detection system using several machine learning models such as Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting. The system uses Natural Language Processing (NLP) techniques to classify news as either real (true) or fake.
+
+📁 Dataset
+True.csv: Contains real news articles.
+
+Fake.csv: Contains fake news articles.
+
+Each dataset includes:
+
+title: Title of the article
+
+text: Body/content of the article
+
+subject: Topic category
+
+date: Date of publication
+
+🧹 Data Preprocessing
+Concatenated both datasets and added a binary label:
+
+1 for True News
+
+0 for Fake News
+
+Dropped unnecessary columns: title, subject, date
+
+Cleaned text using regular expressions:
+
+Converted to lowercase
+
+Removed URLs, HTML tags, punctuation, numbers, and newline characters
+
+📊 Feature Extraction
+Used TF-IDF Vectorizer from sklearn to convert textual data into numerical form for model training.
+
+🤖 Models Trained
+Logistic Regression
+
+Decision Tree Classifier
+
+Random Forest Classifier
+
+Gradient Boosting Classifier
+
+All models were evaluated using:
+
+Accuracy Score
+
+Precision, Recall, and F1-Score (classification_report)
+
